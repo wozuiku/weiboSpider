@@ -1,0 +1,20 @@
+2021-08-25 13:56:58,097 - spider.py - ERROR - [Errno 2] No such file or directory: '/Users/xianxiaoge/PycharmProjects/weibo/weibo_spider/config_sample.json'
+Traceback (most recent call last):
+  File "/Users/xianxiaoge/PycharmProjects/weibo/weibo_spider/spider.py", line 65, in main
+    config = _get_config()
+  File "/Users/xianxiaoge/PycharmProjects/weibo/weibo_spider/spider.py", line 52, in _get_config
+    shutil.copy(src, config_path)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/shutil.py", line 241, in copy
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/xianxiaoge/PycharmProjects/weibo/weibo_spider/config_sample.json'
+2021-08-25 13:58:17,752 - spider.py - INFO - 请先配置当前目录(/Users/xianxiaoge/PycharmProjects/weibo/weibo_spider)下的config.json文件，如果想了解config.json参数的具体意义及配置方法，请访问
+https://github.com/dataabc/weiboSpider#2程序设置
+2021-08-25 14:26:35,471 - spider.py - ERROR - [Errno 2] No such file or directory: '123'
+Traceback (most recent call last):
+  File "/Users/xianxiaoge/PycharmProjects/weibo/weibo_spider/spider.py", line 84, in main
+    config = _get_config()
+  File "/Users/xianxiaoge/PycharmProjects/weibo/weibo_spider/spider.py", line 67, in _get_config
+    with open(config_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '123'
